@@ -1,0 +1,21 @@
+header {
+    width: 100%;
+    img {
+        width: 20%;
+    }
+        nav {
+            @include flexSpace();
+        }
+            .logo {
+                width: 60%;
+            }
+            .navbar {
+                width: 40%;
+                @include flexEven();
+                :hover{
+                    color: $heading;
+                    cursor: pointer;
+                    border-bottom: 1px solid $heading;
+                }
+            }
+}
